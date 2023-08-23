@@ -19,7 +19,7 @@ const About = () => {
         </p>
         <p>
           Our team is full of vanlife enthusiasts who know firsthand the magic
-          of touring the world on 4 wheels.
+          of touring the world on 4 wheels. Let's go
         </p>
         <div className="explore-vans">
           <h2>Your destination is waiting.</h2>
