@@ -3,8 +3,6 @@ import Footer from "./Footer";
 const About = () => {
   return (
     <div className="about">
-      <Nav />
-
       <img
         className="about-image"
         src={new URL("../assets/van-night.png", import.meta.url).href}
@@ -27,7 +25,6 @@ const About = () => {
           <button className="explore-vans-button">Explore our vans</button>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
