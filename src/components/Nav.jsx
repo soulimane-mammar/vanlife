@@ -1,17 +1,39 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "../App.css";
 
-const Nav = () => {
+const Header = () => {
   return (
     <nav className="nav">
       <div className="nav-home">
         <Link to={"/"}>#VANLIFE</Link>
       </div>
-      <div className="nav-links">
-        <Link to={"/about"}>About</Link>
-        <Link to={"/vans"}>Vans</Link>
+      <div>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "nav-active nav-links" : "nav-links"
+          }
+          to={"/host"}
+        >
+          Host
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "nav-active nav-links" : "nav-links"
+          }
+          to={"/about"}
+        >
+          About
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "nav-active nav-links" : "nav-links"
+          }
+          to={"/vans"}
+        >
+          Vans
+        </NavLink>
       </div>
     </nav>
   );
 };
-export default Nav;
+export default Header;

@@ -1,5 +1,5 @@
-import Footer from "./Footer";
-import VanCard from "./VanCard";
+import Footer from "../../components/Footer";
+import VanCard from "../../components/VanCard";
 
 const Vans = (props) => {
   const vansList = props.vans.map((van) => <VanCard van={van} key={van.id} />);
